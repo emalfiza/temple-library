@@ -15,9 +15,17 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-@app.route("/home")
-def home():
+@app.route("/get_book")
+def get_book():
+    """
+    Route to the Home page
+    """
     return render_template("index.html", book=mongo.db.book.find())
+
+
+@app.route("/add_book")
+def add_book():
+    return render_template("addbook.html")
 
 
 if __name__ == "__main__":
