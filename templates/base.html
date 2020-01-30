@@ -15,14 +15,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- My Custom CSS -->
-    <link rel="stylesheet" href="{{ url_for ('static', filename = '')}}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for ('static', filename = 'css/style.css')}}" type="text/css" />
 
     <title>Welcome to Temple Library</title>
 </head>
-<body>
-    <h1>in order to see if the base works</h1>
-    {% block content %}
-    {% endblock %}
+<body class="bg-img">
+
+    <div class="container">
+        {% block content %} {% endblock %}
+    </div>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

@@ -1,0 +1,24 @@
+{% extends "base.html" %} {% block content %}
+
+<!--Books Table-->
+<h5>latest Books</h5>
+<table class="highlight">
+	<thead>
+		<tr>
+			<th>Book Name</th>
+			<th>Book Writer</th>
+			<th>Genre</th>
+			<th>Book Art Cover</th>
+		</tr>
+	</thead>
+	{% for book in book %}
+	<tr>
+		<td>{{book.book_name}}</td>
+		<td>{{book.book_writer}}</td>
+        <td>{{book.book_genre}}</td>
+		<td>{{book.book_cover}}</td>
+	</tr>
+	{% endfor %}
+</table>
+
+{% endblock %}

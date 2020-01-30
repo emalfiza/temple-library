@@ -8,15 +8,16 @@ if path.exists("env.py"):
 
 app = Flask(__name__)
 
-app.config["MONGO_DBNAME"] = 'temple_library'
-app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
+app.config["MONGO_DBNAME"] = "temple_library"
+app.config["MONGO_URI"] = os.getenv("MONGO_URI", "mongodb://localhost")
 
 mongo = PyMongo(app)
 
-@app.route('/')
-@app.route('/book')
-def book():
-    return render_template("book.html", book=mongo.db.book.find())
+
+@app.route("/")
+@app.route("/home")
+def home():
+    return render_template("index.html", book=mongo.db.book.find())
 
 
 if __name__ == "__main__":
