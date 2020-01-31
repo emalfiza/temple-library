@@ -25,7 +25,21 @@ def get_book():
 
 @app.route("/add_book")
 def add_book():
+    """
+    add_book function returns collections to view for filters on the home page
+    """
     return render_template("addbook.html")
+
+
+@app.route("/insert_book", methods=["POST"])
+def insert_book():
+    """
+    After the add_book.html form filled and has been submited
+    this route is called to insert the book to the database.
+    """
+    book = mongo.db.book
+    book.insert_one(request.form.to_dict())
+    return redirect(url_for("get_book"))
 
 
 if __name__ == "__main__":
