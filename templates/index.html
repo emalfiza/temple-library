@@ -1,7 +1,8 @@
 {% extends "base.html" %} {% block content %}
 
 <!--Books Table-->
-<h5>latest Books</h5>
+<h4>Browse Books</h4>
+<a href="{{url_for('add_book')}}">Add Book</a>
 <table class="highlight">
 	<thead>
 		<tr>
@@ -13,6 +14,11 @@
 	</thead>
 	{% for book in book %}
 	<tr>
+        <td>
+        <a href="{{url_for('view_book', book_id=book._id)}}">
+                {{book.book_name}}
+        </a>
+        </td>
 		<td>{{book.book_name}}</td>
 		<td>{{book.book_writer}}</td>
         <td>{{book.book_genre}}</td>

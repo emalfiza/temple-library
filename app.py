@@ -42,6 +42,21 @@ def insert_book():
     return redirect(url_for("get_book"))
 
 
+@app.route("/edit_book/<book_id>")
+def edit_book(book_id):
+    """
+    This route renders the editbook.html page.
+    """
+    the_book = mongo.db.book.find_one({"_id": ObjectId(book_id)})
+    return render_template("editbook.html", book=the_book)
+
+
+@app.route("/view_book/<book_id>")
+def view_book(book_id):
+    book_details = mongo.db.book.find_one({"_id": ObjectId(book_id)})
+    return render_template("viewbook.html", book=book_details)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
