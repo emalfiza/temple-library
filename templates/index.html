@@ -2,7 +2,7 @@
 
 <!--Books Table-->
 <h4>Browse Books</h4>
-<a href="{{url_for('add_book')}}">Add Book</a>
+<!-- <a href="{{url_for('add_book')}}">Add Book</a> -->
 <table class="highlight">
 	<thead>
 		<tr>
@@ -16,7 +16,7 @@
 	<tr>
         <td>
         <a href="{{url_for('view_book', book_id=book._id)}}">
-                {{book.book_name}}
+                 {{book.book_name}}
         </a>
         </td>
 		<td>{{book.book_name}}</td>

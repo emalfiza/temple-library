@@ -51,10 +51,29 @@ def edit_book(book_id):
     return render_template("editbook.html", book=the_book)
 
 
+@app.route("/update_book/<book_id>", methods=["POST"])
+def update_book(book_id):
+    book = mongo.db.book
+    book.update({"_id": ObjectId(book_id)},
+    {
+        "book_name": request.form.get("book_name"),
+        "book_writer": request.form.get("book_writer"),
+        "book_genre": request.form.get("book_genre"),
+        "book_cover": request.form.get("book_cover"),
+    })
+    return redirect(url_for('get_book'))
+
+
 @app.route("/view_book/<book_id>")
 def view_book(book_id):
     book_details = mongo.db.book.find_one({"_id": ObjectId(book_id)})
     return render_template("viewbook.html", book=book_details)
+
+
+@app.route("/delete_book/<book_id>")
+def delete_book(book_id):
+    mongo.db.book.remove({"_id": ObjectId(book_id)})
+    return redirect(url_for("get_book"))
 
 
 if __name__ == "__main__":

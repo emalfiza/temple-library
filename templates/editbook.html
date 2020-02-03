@@ -2,22 +2,22 @@
 
     <h3>Edit Book</h3>
 	<div class="row">
-		<form action=" {{ url_for('insert_book') }}" method="POST" class="col s12">
+		<form action="{{url_for('update_book', book_id=book._id)}}" method="POST" class="col s12"> 
 			<div class="input-field col s12">
 				<i class="material-icons prefix">local_library</i>
-				<input id="book_name" name="book_name" type="text" class="validate">
+				<input id="book_name" name="book_name" type="text" class="validate" value="{{book.book_name}}">
 				<label for="icon_prefix">Book Name</label>
 			</div>
 			<div class="input-field col s12">
-				<input id="book_writer" name="book_writer" type="text" class="validate">
+				<input id="book_writer" name="book_writer" type="text" class="validate" value="{{book.book_writer}}">
 				<label for="icon_telephone">Writer Name</label>
 			</div>
 			<div class="input-field col s12">
-				<input id="book_genre" name="book_genre" type="text" class="validate">
+				<input id="book_genre" name="book_genre" type="text" class="validate" value="{{book.book_genre}}">
 				<label for="icon_telephone">Genre</label>
 			</div>
 			<div class="input-field col s12">
-				<input id="book_cover" name="book_cover" type="text" class="validate">
+				<input id="book_cover" name="book_cover" type="text" class="validate" value="{{book.book_cover}}">
 				<label for="icon_telephone">Cover Art Link</label>
 			</div>
 			<div class="input-field col s12">
