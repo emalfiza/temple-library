@@ -1,8 +1,24 @@
 {% extends "base.html" %} {% block content %}
 
-    <h3>Add Book</h3>
+	<h3>Add Book</h3>
+	<h5>Search by ISBN</h5>
 	<div class="row">
-		<form action=" {{ url_for('insert_book') }}" method="POST" class="col s12">
+		<form action="" method="POST" class="col s12">
+			<div class="input-field col s12">
+				<input id="isbn" name="isbn" type="text">
+				<label for="icon_prefix">Insert ISBN here</label>
+			</div>
+			<div class="input-field col s12">
+				<button id="searchIsbn" class="btn waves-effect waves-light">Search
+		        <i class="material-icons right">search</i>
+		        </button>
+			</div>
+		</form>
+	</div>
+
+    <h5>Or Add Manually</h5>
+	<div class="row">
+		<form action="{{ url_for('insert_book') }}" method="POST" class="col s12">
 			<div class="input-field col s12">
 				<i class="material-icons prefix">local_library</i>
 				<input id="book_name" name="book_name" type="text" class="validate">
@@ -31,7 +47,3 @@
 	</div>
 
 {% endblock %}
-
-
-   
- 
