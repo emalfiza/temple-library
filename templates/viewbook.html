@@ -2,18 +2,19 @@
 
 <div class="row">
     <div class="col s12">
-        <h4>{{book.book_name}}</h4> <a href="{{url_for('edit_book', book_id=book._id)}}">Edit Record</a>
+        <h4>{{book.book_name}}</h4> <a href="{{url_for('edit_book', book_id=book._id)}}">Edit Book</a>
     </div>
 </div>
 
 <div class="row">
     <div class="col s12 m3 center-align">
+        <img src="{{book.book_cover}}" width="100"/>
     </div>
     <div class="col s12 m9">
         <p><strong>Book Name: </strong>{{book.book_name}}</p>
         <p><strong>Writer Name: </strong>{{book.book_writer}}</p>
         <p><strong>Book Genre: </strong>{{book.book_genre}}</p>
-        <p><strong>Book Art Link: </strong>{{book.book_cover}}</p>
+        <p><strong>Description: </strong>{{book.description}}</p>
     </div>
 </div>
 
