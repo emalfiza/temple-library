@@ -60,6 +60,7 @@ def update_book(book_id):
         "book_writer": request.form.get("book_writer"),
         "book_genre": request.form.get("book_genre"),
         "book_cover": request.form.get("book_cover"),
+        "description": request.form.get("description"),
     })
     return redirect(url_for('get_book'))
 
