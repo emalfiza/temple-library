@@ -18,7 +18,6 @@ app.config["MONGO_URI"] = os.getenv("MONGO_URI", "mongodb://localhost:27017/db")
 mongo = PyMongo(app)
 
 
-
 @app.route("/about")
 def about():
     """
@@ -92,7 +91,7 @@ def delete_book(book_id):
 
 @app.route('/search_isbn', methods=['POST'])
 def find_book_info():
-    book_isbn = request.form['isbn']
+    book_isbn = request.form['isbn'].strip()
     google_api = "https://www.googleapis.com/books/v1/volumes?q=isbn:"
 
     with urllib.request.urlopen(google_api + book_isbn) as f:

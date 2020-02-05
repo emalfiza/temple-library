@@ -28,15 +28,15 @@
 				<ul class="right hide-on-med-and-down">
 					<li><a href=" {{ url_for('get_book') }}"><i class="material-icons">home</i></a></li>
 					<li><a href=" {{ url_for('add_book') }}"><i class="material-icons">add</i></a></li>
-					<li><a href="collapsible.html"><i class="material-icons">info</i></a></li>
-					<li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+					<li><a href=" {{ url_for('about') }}"><i class="material-icons">info</i></a></li>
+					<li><a href=""><i class="material-icons">more_vert</i></a></li>
 				</ul>
                 <!-- mobile-demo, side navbar class triggering with main.js jQuery function -->
                 <ul class="sidenav" id="mobile-demo">
                     <li><a href="{{ url_for('get_book') }}">Home - Browse Books</a></li>
                     <li><a href="{{ url_for('add_book') }}">Add Book</a></li>
                     <li><a href="collapsible.html">About</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>
+                    <li><a href="">Mobile</a></li>
                 </ul>
 			</div>
 		</nav>
@@ -52,6 +52,49 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- Custom js -->
     <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script>
+       // searching for book info using ISBN
+        $(function(){
+            $('#searchIsbn').click(function(e){
+                e.preventDefault();
 
+                // disable the button until response
+                $(this).attr("disabled", "disabled");
+
+                $.ajax({
+                    url: '/search_isbn',
+                    data: $('form').serialize(),
+                    type: 'POST',
+                    success: function(response){
+
+                        if(response !== "null") {
+                            // convert the response to a valid JSON Object
+                            let bookInfo = JSON.parse(response);
+                            $("#book_name").val(bookInfo["volumeInfo"]["title"]);
+                            $("#book_writer").val(bookInfo["volumeInfo"]["authors"]);
+                            $("#book_genre").val(bookInfo["volumeInfo"]["categories"]);
+                            $("#description").val(bookInfo["volumeInfo"]["description"]);
+                            $("#book_cover").val(bookInfo["volumeInfo"]["imageLinks"]["thumbnail"]);
+
+                        } else {
+                            // display the error message
+                            alert("Sorry, no data were found!");
+                        }
+
+                        // enable the button again
+                        $('#searchIsbn').removeAttr("disabled");
+                    },
+                    error: function(error){
+
+                        // display the error message
+                        alert(error);
+
+                        // enable the button again
+                        $('#searchIsbn').removeAttr("disabled");
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
