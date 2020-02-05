@@ -15,21 +15,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- My Custom CSS -->
-    <link rel="stylesheet" href="{{ url_for ('static', filename = 'css/style.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css')}}" type="text/css" />
 
     <title>Welcome to Temple Library</title>
 </head>
 <body class="bg-img">
 	<header>
 		<nav>
-			<div class="nav-wrapper">
-				<a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Temple Library</a>
+			<div class="nav-wrapper grey darken-3">
+                <a href="{{ url_for('get_book') }}" class="brand-logo ">Temple <span class="highlighting">Library</span></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href=" {{ url_for('get_book') }}"><i class="material-icons">home</i></a></li>
 					<li><a href=" {{ url_for('add_book') }}"><i class="material-icons">add</i></a></li>
 					<li><a href="collapsible.html"><i class="material-icons">info</i></a></li>
 					<li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
 				</ul>
+                  <ul class="sidenav" id="mobile-demo">
+                    <li><a href="{{ url_for('get_book') }}">Home - Browse Books</a></li>
+                    <li><a href="{{ url_for('add_book') }}">Add Book</a></li>
+                    <li><a href="collapsible.html">About</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                </ul>
 			</div>
 		</nav>
 	</header>
@@ -42,5 +49,7 @@
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<!-- Compiled and minified JavaScript for Materalize -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <!-- Custom js -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
