@@ -31,7 +31,8 @@
 					<li><a href="collapsible.html"><i class="material-icons">info</i></a></li>
 					<li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
 				</ul>
-                  <ul class="sidenav" id="mobile-demo">
+                <!-- mobile-demo, side navbar class triggering with main.js jQuery function -->
+                <ul class="sidenav" id="mobile-demo">
                     <li><a href="{{ url_for('get_book') }}">Home - Browse Books</a></li>
                     <li><a href="{{ url_for('add_book') }}">Add Book</a></li>
                     <li><a href="collapsible.html">About</a></li>
@@ -49,7 +50,8 @@
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<!-- Compiled and minified JavaScript for Materalize -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-     <!-- Custom js -->
+    <!-- Custom js -->
     <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+
 </body>
 </html>

@@ -3,13 +3,17 @@ from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo  # To get Flask interacting with MongoDB #
 from bson.objectid import ObjectId
 from os import path
+
+import urllib.request
+import json
+
 if path.exists("env.py"):
     import env
 
 app = Flask(__name__)
 
 app.config["MONGO_DBNAME"] = "temple_library"
-app.config["MONGO_URI"] = os.getenv("MONGO_URI", "mongodb://localhost")
+app.config["MONGO_URI"] = os.getenv("MONGO_URI", "mongodb://localhost:27017/db")
 
 mongo = PyMongo(app)
 
@@ -77,7 +81,20 @@ def delete_book(book_id):
     return redirect(url_for("get_book"))
 
 
+@app.route('/search_isbn', methods=['POST'])
+def find_book_info():
+    book_isbn = request.form['isbn']
+    google_api = "https://www.googleapis.com/books/v1/volumes?q=isbn:"
+
+    with urllib.request.urlopen(google_api + book_isbn) as f:
+        text = f.read()
+
+    decoded_text = text.decode("utf-8")
+    obj = json.loads(decoded_text)
+    return json.dumps(obj["items"][0])
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
-            port=int(os.environ.get("PORT")),
+            port=int(os.environ.get("PORT", 5000)),
             debug=True)
