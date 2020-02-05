@@ -18,6 +18,15 @@ app.config["MONGO_URI"] = os.getenv("MONGO_URI", "mongodb://localhost:27017/db")
 mongo = PyMongo(app)
 
 
+
+@app.route("/about")
+def about():
+    """
+    Route to about page
+    """
+    return render_template("about.html")
+
+
 @app.route("/")
 @app.route("/get_book")
 def get_book():
