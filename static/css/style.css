@@ -19,6 +19,17 @@ main {
   color: #0000ff;
 }
 
+.nav-icons {
+    transition: all 300ms ease-in-out;  
+}
+
+.nav-icons:hover {
+  color: #0000ff;
+  transform: rotate(360deg); 
+}
+
+
+
 /***** FOOTER *****/
 .social-links {
   margin: 0.5em;
