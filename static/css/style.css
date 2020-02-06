@@ -2,16 +2,8 @@
   background: url(static/image/background-image.jpg);
   background-attachment: fixed;
   background-size: cover; } */
-  
 
-
-  /* Navbar................................... */
-
-.highlighting {
-  color: blue;
-}
-
-
+ /***** GENERAL SITE SETTINGS *****/
 body {
     display: flex;
     min-height: 100vh;
@@ -20,4 +12,20 @@ body {
 
 main {
     flex: 1 0 auto;
-  }
+  } 
+
+/***** NAVBAR *****/
+.highlighting {
+  color: #0000ff;
+}
+
+/***** FOOTER *****/
+.social-links {
+  margin: 0.5em;
+  transition: all 300ms ease-in-out; 
+}
+
+.social-links:hover {
+  color: #0000ff;
+  transform: rotate(360deg); 
+}
