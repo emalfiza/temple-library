@@ -15,8 +15,11 @@ main {
   } 
 
 /***** NAVBAR *****/
+.library {
+    color: #26a69a;
+}
 .highlighting {
-  color: #26a69a;
+    color: #26a69a;
 }
 
 .nav-icons {
@@ -24,8 +27,8 @@ main {
 }
 
 .nav-icons:hover {
-  color: #26a69a;
-  transform: rotate(360deg); 
+    color: #26a69a;
+    transform: rotate(360deg); 
 }
 
 /***** FOOTER *****/
