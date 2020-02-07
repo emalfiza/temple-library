@@ -1,7 +1,8 @@
-/* .bg-img {
-  background: url(static/image/background-image.jpg);
+.background-img {
+  background: url(../image/background-image.jpg);
   background-attachment: fixed;
-  background-size: cover; } */
+  background-size: cover;
+}
 
  /***** GENERAL SITE SETTINGS *****/
 body {
