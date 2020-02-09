@@ -25,7 +25,8 @@ This project was developed to create an App to make life easier for a librarian 
 #### Home Page
 -**Browse Books** The users added books appear in a simplistic and userfriendly way in columns and rows, the most recent entries on the last column. 
 -**Columns and Rows** Each column and row consist the book cover, book name, book writer and genre. All the book names are linked to the viewbook page which can take you to that page by clicking the book name. 
-![Home Page]()
+
+![Home Page](static/wireframes/home-large.png)
 ![Home Page Mobile View]()
 
 #### Add Book Page
@@ -165,6 +166,7 @@ static (folder)
       (image files)
    js (folder)
       main.js(file)
+   wireframes (folder)
 ```
 
 The various pages for this app are in the templates folder. This folder contains the following html templates:
@@ -198,7 +200,8 @@ Version control and Heroku deployment were initially done separately in the comm
 In summary, two methods of deployment were used.
 To deploy Temple Library App to heroku, the following steps were taken:
 
-### Method one . Initially, for each version I initially pushed separately to either github and and heroku. 
+### Method one 
+Initially, for each version I initially pushed separately to either github and and heroku. 
 
 I began deployment via the CLI in gitpod workspace terminal using the following commands until I saw the build log in heroku or github repository showed successful deployment and/or new version commit:
 
@@ -240,7 +243,8 @@ As CI students on the slack recommended connecting github pages to Heroku for au
 
 From that point on gitpod push to github automatically deployed to heroku and so github version control and heroku build log mirrored each other perfectly. 
 
-Step by Step deployment from fresh gitpod terminal workspace would be. 
+
+##### Step by Step deployment from fresh gitpod terminal workspace would be. 
 
 1. Checked requirements.txt file using the terminal command pip freeze > requirements.txt.
 
@@ -269,3 +273,18 @@ In the heroku dashboard, click "Deploy".
 In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
 
 The site is now successfully deployed.
+
+## Credits
+---
+### Content
+
+### Media
+
+### Inspiration
+
+I received inspiration for this project after meeting my personal guide Housam Ziad. He made me understand the concepts of building an App to be useful rather than for mark as a student and I believe this is a step forward in the development process.
+
+### Acknowledgements
+
+Housam Ziad for the motivation and encouragement, My mentor Brian Macharia for his clear direction.
+The tutor team support has been excellent as always especially Tim, he is always there to help with joy and happiness. Slack community CI students and mentors.  
