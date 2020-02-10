@@ -13,7 +13,8 @@ if path.exists("env.py"):
 app = Flask(__name__)
 
 app.config["MONGO_DBNAME"] = "temple_library"
-app.config["MONGO_URI"] = os.getenv("MONGO_URI", "mongodb://localhost:27017/db")
+app.config["MONGO_URI"] = os.getenv(
+    "MONGO_URI", "mongodb://localhost:27017/db")
 
 mongo = PyMongo(app)
 
@@ -67,7 +68,7 @@ def edit_book(book_id):
 def update_book(book_id):
     book = mongo.db.book
     book.update({"_id": ObjectId(book_id)},
-    {
+                {
         "book_name": request.form.get("book_name"),
         "book_writer": request.form.get("book_writer"),
         "book_genre": request.form.get("book_genre"),
