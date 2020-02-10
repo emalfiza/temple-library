@@ -3,7 +3,7 @@
 
 ## App Name: Temple Library -
 
-[#### See here for a deployed app]()
+#### [See here for a deployed app]()
 It is no secret that I love books.  Though I prefer the printed book, I also have electronic collections on every device imaginable.  
 From speaking about the [WE SHOULD ALL BE FEMINISTS ](https://www.chimamanda.com/book/we-should-all-be-feminists/) or how 
 [BOOKS MAKE A BETTER LIFE](https://www.skipprichard.com/books-make-a-better-life/) to visiting bookstores and libraries, I want 
@@ -25,6 +25,7 @@ This project was developed to create an App to make life easier for a librarian 
 #### Home Page
 -**Browse Books** The users added books appear in a simplistic and userfriendly way in columns and rows, the most recent entries on the last column. 
 -**Columns and Rows** Each column and row consist the book cover, book name, book writer and genre. All the book names are linked to the viewbook page which can take you to that page by clicking the book name. 
+
 ![Home Page]()
 ![Home Page Mobile View]()
 
@@ -55,7 +56,7 @@ Edit Book page is a simplistic form field. After completing the form and clickin
 ![About Page]()
 ![About Page Mobile View]
 
-[#### See here for Wireframes]()
+#### [See here for Wireframes](static/wireframes)
 
 
 ## UX
@@ -76,7 +77,7 @@ The UX has been designed with the end user in mind and as expectations in terms 
 - To store the info which is valued.
 
 
-#### **The Structure plane**
+## The Structure plane
 ---
 
 Considering what would be logical and reasonable Data-centric project is about usibility more than being fancy and decorated, That is why I kept the default material feeling and considering intuitive  IA (Information Architecture), the structure has been kept as simplistic as possible on App.
@@ -109,4 +110,230 @@ The main features of the App are:
 Adding the ability to create users and borrowing books collection into the MongoDB and routing them to the App by adding more pages will be considered for the future if I find the group for using this App. Obviously, creating a contact page would be a great enhancement to make in the future. 
 
 
+## Technologies Used
+---
+1. [HTML5](https://en.wikipedia.org/wiki/HTML5) Semantic markup language as the shell of the site.
+2. [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) -This was used to style the elements of the HTML code.
+3. [MATERIALIZE](https://materializecss.com/about.html) -HTML forms, icons, templates with nav bar, buttons and footer.
+4. [PYTHON3](https://www.python.org/download/releases/3.0/)
+5. [FLASK](https://flask.palletsprojects.com/en/1.0.x/) Framework to construct and render pages.
+6. [MONGODB_ATLAS](https://www.mongodb.com/cloud/atlas) for nonsql database
+7. [GITPOD](https://www.gitpod.io) IDE 
+8. [HEROKU](https://heroku.com/) - deployment
+9. [GITHUB](https://github.com) - used for version control 
+10. [Typora](https://typora.io/) - Language for Readme.md file
+11. [PYMONGO](https://api.mongodb.com/python/current/) - to make communication between Python and MongoDB possible
+12. [PIP and Pypi libraries]
+13. [JQUERY](https://code.jquery.com/jquery-3.3.1.slim.min.js) - jQuery was used to search for book info by ISBN from Googple API
+14. [JINJA](https://jinja.palletsprojects.com/en/2.10.x/) - to simplify displaying data from the backend of this project smoothly and effectively in html.
+15. [BALSAMIQ](https://balsamiq.com/wireframes/) - wireframe design
+16. [GOOGLE FONTS](https://fonts.google.com/) Exo 2 font family selected for all the elements
+
+
+## Testing
+---
+
+## File Structure
+---
+
+The project has been organised as follows:
+
+```
+ROOT DIRECTORY
+(Project Folder)
+static (folder)
+templates (folder)
+gitignore (file)
+env.py(file)
+Procfile (file)
+README.md (file)
+requirements.txt (file)
+```
+
+#### Gitignore
+
+```
+env.py
+```
+
+The static folder structure is as follows:
+
+```
+static (folder)
+   CSS (folder)
+      style.css (file)
+   images (folder)
+      (image files)
+   js (folder)
+      main.js(file)
+   wireframes (folder)
+```
+
+The various pages for this app are in the templates folder. This folder contains the following html templates:
+
+```
+templates (folder)
+   about.html (file)
+   addbook.html (file)
+   base.html (file)
+   editbook.html (file)
+   index.html.html (file)
+   viewbook.html (file)
+```
+
+
+## Version control and Heroku Deployment
+---
+
+For version control Github has been used. Github is a distributed Version Control Systems (DVCSs) recommended by Code Institute which ensures we have a store of all significant changes made during development.
+Using Gitpod alongside Github had major advantages in terms of how easy it was to stage, commit and push versions but I did get confused in the early days of using Gitpod because opening up previous versions and trying to save them did not commit as the most recent version which led to a number of different 
+eventho my version control for this entire App was still the same on the terminal.
+```
+git status 
+git add .
+git commit -m ""
+```
+
+Github initial commit to repository and first heroku build were created on the same day. 
+Version control and Heroku deployment were initially done separately in the command line (Method one below) then as better understanding of gitpod and heroku was grasped, all significant version changes were pushed to github and automatically deployed to heroku once the app was connected to the github repository (Method two below).
+
+In summary, two methods of deployment were used.
+To deploy Temple Library App to heroku, the following steps were taken:
+
+### Method one 
+Initially, for each version I initially pushed separately to either github and and heroku. 
+
+I began deployment via the CLI in gitpod workspace terminal using the following commands until I saw the build log in heroku or github repository showed successful deployment and/or new version commit:
+
+```
+npm install -g heroku
+
+heroku login -i
+
+git status
+
+git add 
+
+git commit -m "initial commit"
+
+git remote add heroku https://git.heroku.com/fallen-but-not-broken
+
+git push -u heroku master
+
+git remote -v
+
+pip3 freeze --local > requirements.txt
+
+echo web: python app.py > Procfile
+```
+
+
+Initially I separately added to the github repository.
+
+```
+git add 
+git commit -m ""
+git remote add (my repository named temple-library)
+git push -u origin master
+```
+
+### Method two 
+
+As CI students on the slack recommended connecting github pages to Heroku for automated deployments. I connected Heroku to github and selecting automatic deploys. 
+
+From that point on gitpod push to github automatically deployed to heroku and so github version control and heroku build log mirrored each other perfectly. 
+
+
+##### Step by Step deployment from fresh gitpod terminal workspace would be. 
+
+1. Checked requirements.txt file using the terminal command pip freeze > requirements.txt.
+
+2. Checked Procfile with the terminal command echo web: python app.py > Procfile.
+
+3. Stage changes in gitpod. Write a commit message, click on the tick icon then push to Github.
+
+4. Create a new app on the Heroku website by clicking the "New" button in your dashboard. Give it a name and set the region to Europe.
+
+5. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+
+6. Confirm the linking of the heroku app to the correct GitHub repository.
+
+7. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+
+Set the following config vars:
+
+Key	Value
+
+IP	0.0.0.0
+
+PORT	5000
+
+In the heroku dashboard, click "Deploy".
+
+In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
+
+The site is now successfully deployed.
+
+## Credits
+---
+
+### Author 
+
+Emal Fiza Full Stack Student at Code Institute
+
+### Media
+
+### Inspiration
+
+I received inspiration for this project after meeting my personal guide Housam Ziad. He made me understand the concepts of building an App to be useful rather than for mark as a student and I believe this is a step forward in the development process.
+
+### Acknowledgements
+
+Housam Ziad for the motivation and encouragement, My mentor Brian Macharia for his clear direction.
+The tutor team support has been excellent as always especially Tim, he is always there to help with joy and happiness. Slack community CI students and mentors. 
+
+
+
+### Submission
+---
+
+#### Assessment Criteria review
+
+My previous submitted projects developed me in the process to be aware of the Assessment Criteria in order to build an App to the standard of the Code Institute. So this time I have targeted to fulfil all the assessment criteria below to a standard beyond that expected. 
+
+Your Data Centric Development project will be assessed based on the following criteria:
+
+Usability and Visual Impact:
+Project Purpose, 
+UX design,
+Suitability for purpose,
+Navigation,
+Ease of use,
+Information Architecture,
+Defensive Design,
+
+Layout and Visual Impact:
+
+Responsive Design,
+Image Presentation,
+Colour scheme and typography
+
+Code Quality:
+
+Appropriate use of HTML,
+Appropriate use of CSS,
+Appropriate use of Python,
+Appropriate use of the template language
+
+Software Development practices:
+
+Directory Structure and File Naming,
+Version control,
+Testing implementation,
+Testing write-up,
+Readme file,
+Comments,
+Data store integration,
+Deployment implementation,
+Deployment write-up
 
