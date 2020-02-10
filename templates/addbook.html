@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block content %}
 
 	<h4>Add Book</h4>
-	<h4>Search by ISBN</h4>
+	<h5>Search by ISBN</h5>
 	<div class="row">
 		<form action="" method="POST" class="col s12">
 			<div class="input-field col s12">
@@ -16,7 +16,7 @@
 		</form>
 	</div>
 
-    <h4>Or Add Manually</h4>
+    <h5>Or Add Manually</h5>
 	<div class="row">
 		<form action="{{ url_for('insert_book') }}" method="POST" class="col s12">
 			<div class="input-field col s12">
