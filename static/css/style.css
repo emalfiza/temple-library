@@ -41,18 +41,24 @@ main {
     transform: rotate(360deg); 
 }
 
+/***** The font size for the brand-logo is a materialize default and it was 
+overlapping on a small screen that's why media query added *****/
 @media only screen and (max-width: 600px) {  
     a.brand-logo {
     font-size: 1.5rem;
     }
 }
 
+/***** The font size for the h4 is a materialize default and it was not 
+visually appealing on a small screen that's why media query added *****/
 @media only screen and (max-width: 600px) {  
     h4 {
     font-size: 1.5rem;
     }
 }
 
+/***** The font size for the h5 is a materialize default and it was not 
+visually appealing on a small screen that's why media query added *****/
 @media only screen and (max-width: 600px) {  
     h5 {
     font-size: 1.3rem;
@@ -67,4 +73,8 @@ main {
 .social-links:hover {
   color: #26a69a;
   transform: rotate(360deg); 
+}
+
+.highlighting-footer {
+    color: #26a69a;
 }

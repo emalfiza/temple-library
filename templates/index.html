@@ -1,7 +1,6 @@
 {% extends "base.html" %} {% block content %}
 <!--Books Table-->
 <h4>Browse Books</h4>
-<!-- <a href="{{url_for('add_book')}}">Add Book</a> -->
 <table class="highlight">
 	<thead>
 		<tr>
@@ -21,7 +20,6 @@
         </td>
 		<td>{{book.book_writer}}</td>
         <td>{{book.book_genre}}</td>
-
 	</tr>
 	{% endfor %}
 </table>
