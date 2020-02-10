@@ -26,11 +26,7 @@ This project was developed to create an App to make life easier for a librarian 
 -**Browse Books** The users added books appear in a simplistic and userfriendly way in columns and rows, the most recent entries on the last column. 
 -**Columns and Rows** Each column and row consist the book cover, book name, book writer and genre. All the book names are linked to the viewbook page which can take you to that page by clicking the book name. 
 
-<<<<<<< HEAD
 ![Home Page]()
-=======
-![Home Page](static/wireframes/home-large.png)
->>>>>>> d5de4c3a1eba2472eeea42cb2d1939ea3a3b09b2
 ![Home Page Mobile View]()
 
 #### Add Book Page
@@ -280,14 +276,10 @@ The site is now successfully deployed.
 
 ## Credits
 ---
-<<<<<<< HEAD
 
 ### Author 
 
 Emal Fiza Full Stack Student at Code Institute
-=======
-### Content
->>>>>>> d5de4c3a1eba2472eeea42cb2d1939ea3a3b09b2
 
 ### Media
 
@@ -296,7 +288,6 @@ Emal Fiza Full Stack Student at Code Institute
 I received inspiration for this project after meeting my personal guide Housam Ziad. He made me understand the concepts of building an App to be useful rather than for mark as a student and I believe this is a step forward in the development process.
 
 ### Acknowledgements
-<<<<<<< HEAD
 
 Housam Ziad for the motivation and encouragement, My mentor Brian Macharia for his clear direction.
 The tutor team support has been excellent as always especially Tim, he is always there to help with joy and happiness. Slack community CI students and mentors. 
@@ -345,8 +336,3 @@ Comments,
 Data store integration,
 Deployment implementation,
 Deployment write-up
-=======
->>>>>>> d5de4c3a1eba2472eeea42cb2d1939ea3a3b09b2
-
-Housam Ziad for the motivation and encouragement, My mentor Brian Macharia for his clear direction.
-The tutor team support has been excellent as always especially Tim, he is always there to help with joy and happiness. Slack community CI students and mentors.  
