@@ -128,10 +128,88 @@ Adding the ability to create users and borrowing books collection into the Mongo
 14. [JINJA](https://jinja.palletsprojects.com/en/2.10.x/) - to simplify displaying data from the backend of this project smoothly and effectively in html.
 15. [BALSAMIQ](https://balsamiq.com/wireframes/) - wireframe design
 16. [GOOGLE FONTS](https://fonts.google.com/) Exo 2 font family selected for all the elements
+17. [Am I Responsive?](http://ami.responsivedesign.is/#)
 
 
 ## Testing
 ---
+
+### Early development testing.
+
+1. Code Institute student care team advised me to start using Gitpod IDE for my 3rd milestone project. but the lack of extensions available meant that I would still used PyCharm to check python syntax and test if the code would run. 
+
+For example, in the earliest phase of development I did not understand how crucial tabs and extra spaces were in Python. It was not always clear in gitpod IDE. Copying the code in to Pycharm helped test and resolve issues.
+
+3. Chrome Devtool was used from the outset to judge the responsiveness of the site and help test the layout and css styling. 
+
+For example, 
+When choosing the Materialize components to add in early development I added each one then used Chrome Devtools to check the responsiveness before I used them in the design of the site.
+
+### Mid development Testing
+
+1. All the above tests continued to be used throughout. 
+PyCharm, GITPOD, DEVTOOLS, HTML VALIDATOR, GitHub and HEROKU. 
+
+2. Nearly 60% t0 70% through to the developemnt of this app, I wanted to check the app on the Heroku and send it to my mentor Brian Macharia for potential check. I used to get an Application Error and I contacted tutor help and it took me a complete day to resolve the issue with the Tim. The issue was that I didnt know at that stage of time that I should have setted MONGO_URI on the heroku config var. 
+
+### Final Testing to demonstrate thorough testing carried out throughout development.
+
+I was almost done with all the functionality of the app. wanted to do some code cleaning, checking the debugs and update README.md but I faced with a problem. version controlling to the github pages where normal but nothing, no updates were showing on the GitHub pages. Again tutor help and Haley helped me with the issue which was a difference between what's on github and what's in workspace. that meant there were something recorded in my github were it was different from my workspace. so then I found out that there was conflict on my README.md file so I had to use the following command:
+```
+git push origin master --force
+```
+
+### MongoDB test
+
+MongoDB Atlas were manually added key value pair on my collection and checked all working from the frontend too.
+
+All CRUD functionality is working correctly.
+
+##  Responsive Design - Temple Library app is fully responsive; 
+
+1. For the final tests, as throughout the entire development and design process, I continuously tested a multitude of screen sizes using Chrome Developer tools. Each time there was a change in navigation, design, functionality etc., how it looked on every size screen was always checked. At the final when I was happy with everything I checked the responsiveness on the [Am I Responsive](http://ami.responsivedesign.is/#)
+
+It was found during final user device tests that individual phone settings, on any mobile screen size the Navbar logo font size was overlapping and line breaking on the viewport this all fixed by setting media query and as well as the h4 and h5 font size was very large for the small screens as it was the materialize default font size setup which was not really visually appealling so again media query added. 
+
+Another issue that was noticed during development was the effect zoom has on large screens sometimes (though not repeatedly) on the view story layout. It seems to happen on zoom 0-50% though not reproduceably. 
+
+
+## Compatibility
+---
+
+To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in desktop, tablet and mobile configuration. Different versions used by friends and other students. No issues.
+
+1. Chrome
+
+2. Edge
+
+3. Firefox
+
+4. Safari
+
+5. Opera
+
+#### Devices tested
+
+Mobile phones
+- Samsung j5
+- Samsung A8
+- Iphone 6
+- Iphone7
+- Iphone 7S plus,
+- Sony XA42
+
+Tablets tested
+- Ipad
+= LNBEI 10 inch Android tablet
+
+Laptop tested
+- MacBook pro,
+- Sony Vaio
+- HP Pavillion DV6
+
+Desktop
+(unbranded Windows 7 OS) with different monitors 21 and 27inch.
 
 ## File Structure
 ---
