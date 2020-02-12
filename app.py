@@ -104,6 +104,6 @@ def find_book_info():
 
 
 if __name__ == "__main__":
-    app.run(host=os.environ.get("IP"),
+    app.run(host=os.environ.get("IP", "0.0.0.0"),
             port=int(os.environ.get("PORT", 5000)),
             debug=True)
