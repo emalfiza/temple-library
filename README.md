@@ -154,10 +154,24 @@ PyCharm, GITPOD, DEVTOOLS, HTML VALIDATOR, GitHub and HEROKU.
 
 ### Final Testing to demonstrate thorough testing carried out throughout development.
 
-I was almost done with all the functionality of the app. wanted to do some code cleaning, checking the debugs and update README.md but I faced with a problem. version controlling to the github pages where normal but nothing, no updates were showing on the GitHub pages. Again tutor help and Haley helped me with the issue which was a difference between what's on github and what's in workspace. that meant there were something recorded in my github were it was different from my workspace. so then I found out that there was conflict on my README.md file so I had to use the following command:
+1. I was almost done with all the functionality of the app. wanted to do some code cleaning, checking the debugs and update README.md but I faced with a problem. version controlling to the github pages where normal but nothing, no updates were showing on the GitHub pages. Again tutor help and Haley helped me with the issue which was a difference between what's on github and what's in workspace. that meant there were something recorded in my github were it was different from my workspace. so then I found out that there was conflict on my README.md file so I had to use the following command:
 ```
 git push origin master --force
 ```
+2. on day 14 of developing this App. In the morning of 12th of Feberuary 2020 I wanted to test and do some house keeping of my App the Gitpod IDE stopped running the project. As usal there are two buttons for each workspace `download` `start`, or if it's a running workspace it shows two button `stop` `open`, but temple-library workspace was showing only one disablled button `open` I tried troubleshooting, realoading the page, clearing the cache, logging out and logging none of them worked. CI tutor help recommended me to open a new workspace and working from there. I condcuted the following methods:
+
+- opened the pushed code from the GitHub pages. Make sure to select the gitpod green button to record your commiting on the same recorded github. 
+- insall the python modules. using the existing `requirements.txt file`. To install used `pip3 install -r requirements.txt`.
+- make sure to create a env.py file for the MONGO_URI
+
+<details>
+<summary>Gitpod fault screenshot</summary>
+
+<p align="center">
+    <img height="350" src="./static/image/gitpod.png" alt="Gitpod fault screenshot">
+</p>
+</details>
+
 
 ### MongoDB test
 
