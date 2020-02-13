@@ -112,23 +112,23 @@ Adding the ability to create users and borrowing books collection into the Mongo
 
 ## Technologies Used
 ---
-1. [HTML5](https://en.wikipedia.org/wiki/HTML5) Semantic markup language as the shell of the site.
-2. [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) -This was used to style the elements of the HTML code.
-3. [MATERIALIZE](https://materializecss.com/about.html) -HTML forms, icons, templates with nav bar, buttons and footer.
+1. [HTML5](https://en.wikipedia.org/wiki/HTML5) - Semantic markup language as the shell of the site.
+2. [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - This was used to style the elements of the HTML code.
+3. [MATERIALIZE](https://materializecss.com/about.html) - HTML forms, icons, templates with nav bar, buttons and footer.
 4. [PYTHON3](https://www.python.org/download/releases/3.0/)
-5. [FLASK](https://flask.palletsprojects.com/en/1.0.x/) Framework to construct and render pages.
-6. [MONGODB_ATLAS](https://www.mongodb.com/cloud/atlas) for nonsql database
-7. [GITPOD](https://www.gitpod.io) IDE 
-8. [HEROKU](https://heroku.com/) - deployment
-9. [GITHUB](https://github.com) - used for version control 
+5. [FLASK](https://flask.palletsprojects.com/en/1.0.x/) - Framework to construct and render pages.
+6. [MONGODB_ATLAS](https://www.mongodb.com/cloud/atlas) - For nonsql database
+7. [GITPOD](https://www.gitpod.io) - IDE 
+8. [HEROKU](https://heroku.com/) - Deployment
+9. [GITHUB](https://github.com) - Used for version control 
 10. [Typora](https://typora.io/) - Language for Readme.md file
-11. [PYMONGO](https://api.mongodb.com/python/current/) - to make communication between Python and MongoDB possible
+11. [PYMONGO](https://api.mongodb.com/python/current/) - To make communication between Python and MongoDB possible
 12. [PIP and Pypi libraries]
 13. [JQUERY](https://code.jquery.com/jquery-3.3.1.slim.min.js) - jQuery was used to search for book info by ISBN from Googple API
-14. [JINJA](https://jinja.palletsprojects.com/en/2.10.x/) - to simplify displaying data from the backend of this project smoothly and effectively in html.
-15. [BALSAMIQ](https://balsamiq.com/wireframes/) - wireframe design
-16. [GOOGLE FONTS](https://fonts.google.com/) Exo 2 font family selected for all the elements
-17. [Am I Responsive?](http://ami.responsivedesign.is/#)
+14. [JINJA](https://jinja.palletsprojects.com/en/2.10.x/) - To simplify displaying data from the backend of this project smoothly and effectively in html.
+15. [BALSAMIQ](https://balsamiq.com/wireframes/) - Wireframe design
+16. [GOOGLE FONTS](https://fonts.google.com/) - Exo 2 font family selected for all the elements
+17. [Am I Responsive?](http://ami.responsivedesign.is/#) - Was used for the responsiveness of the app.
 
 
 ## Testing
@@ -150,7 +150,7 @@ When choosing the Materialize components to add in early development I added eac
 1. All the above tests continued to be used throughout. 
 PyCharm, GITPOD, DEVTOOLS, HTML VALIDATOR, GitHub and HEROKU. 
 
-2. Nearly 60% t0 70% through to the developemnt of this app, I wanted to check the app on the Heroku and send it to my mentor Brian Macharia for potential check. I used to get an Application Error and I contacted tutor help and it took me a complete day to resolve the issue with the Tim. The issue was that I didnt know at that stage of time that I should have setted MONGO_URI on the heroku config var. 
+2. Nearly 60% t0 70% through to the developemnt of this app, I wanted to check the app on the Heroku and send it to my mentor Brian Macharia for potential check. I used to get an Application Error and I contacted tutor help and it took me a complete day to resolve the issue with Tim. The issue was that I didnt know at that stage of time that I should have setted MONGO_URI on the heroku config var. 
 
 ### Final Testing to demonstrate thorough testing carried out throughout development.
 
@@ -184,8 +184,6 @@ All CRUD functionality is working correctly.
 1. For the final tests, as throughout the entire development and design process, I continuously tested a multitude of screen sizes using Chrome Developer tools. Each time there was a change in navigation, design, functionality etc., how it looked on every size screen was always checked. At the final when I was happy with everything I checked the responsiveness on the [Am I Responsive](http://ami.responsivedesign.is/#)
 
 It was found during final user device tests that individual phone settings, on any mobile screen size the Navbar logo font size was overlapping and line breaking on the viewport this all fixed by setting media query and as well as the h4 and h5 font size was very large for the small screens as it was the materialize default font size setup which was not really visually appealling so again media query added. 
-
-Another issue that was noticed during development was the effect zoom has on large screens sometimes (though not repeatedly) on the view story layout. It seems to happen on zoom 0-50% though not reproduceably. 
 
 
 ## Compatibility
@@ -308,7 +306,7 @@ git add
 
 git commit -m "initial commit"
 
-git remote add heroku https://git.heroku.com/fallen-but-not-broken
+git remote add heroku
 
 git push -u heroku master
 

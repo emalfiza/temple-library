@@ -29,6 +29,10 @@ main {
     font-family: 'Exo 2', sans-serif;
 }
 
+a {
+    color: #26a69a;
+}
+
 .highlighting-about {
     color: #26a69a;
 }
