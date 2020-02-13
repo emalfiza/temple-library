@@ -2,7 +2,7 @@
 
 /***** GENERAL SITE SETTINGS *****/
 .background-img {
-  background: url(../image/background-image.jpg);
+  background: url(../image/book.png);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -29,6 +29,7 @@ main {
     font-family: 'Exo 2', sans-serif;
 }
 
+/***** to make a href on the home page visually appealing *****/
 a {
     color: #26a69a;
 }
