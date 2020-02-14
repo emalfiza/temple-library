@@ -31,13 +31,14 @@ main {
 
 /***** to make a href on the home page visually appealing *****/
 a {
-    color: #26a69a;
+    color: #322105;
 }
 
 .highlighting-about {
     color: #26a69a;
 }
 
+/***** Same background colour appllied to both navbar and footer *****/ 
 .grey.darken-3 {
     background-color: #322105!important;
 }
