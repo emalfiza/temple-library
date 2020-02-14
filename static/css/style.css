@@ -29,9 +29,16 @@ main {
     font-family: 'Exo 2', sans-serif;
 }
 
+.bg-color {
+    background-color: rgba(50, 33, 5, 0.6);
+    padding: 18px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
 /***** to make a href on the home page visually appealing *****/
 a {
-    color: #322105;
+    color: #26a69a;
 }
 
 .highlighting-about {
@@ -85,6 +92,12 @@ visually appealing on a small screen that's why media query added *****/
 @media only screen and (max-width: 600px) {  
     h5 {
     font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 390px) {  
+    .book-cover {
+    visibility: hidden;
     }
 }
 /***** FOOTER *****/
