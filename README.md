@@ -159,6 +159,7 @@ Adding the ability to create users and borrowing books collection into the Mongo
 15. [BALSAMIQ](https://balsamiq.com/wireframes/) - Wireframe design
 16. [GOOGLE FONTS](https://fonts.google.com/) - Exo 2 font family selected for all the elements
 17. [Am I Responsive?](http://ami.responsivedesign.is/#) - Was used for the responsiveness of the app.
+18. [Canva](https://www.canva.com/colors/color-palette-generator/) - Was used to generate colour from the background image for a better practice.
 
 
 ## Testing

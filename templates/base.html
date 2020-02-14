@@ -22,12 +22,13 @@
 
     <title>Welcome to Temple Library</title>
 </head>
-<body class="background-img">
 
+<body class="background-img">
 	<header>
 		<nav class="container-fluid">
 			<div class="nav-wrapper grey darken-3">
-                <a href="{{ url_for('get_book') }}" class="brand-logo"><i class="material-icons library">library_books</i>Temple <span class="highlighting-nav">Library</a>
+				<a href="{{ url_for('get_book') }}"
+					class="brand-logo"><i class="material-icons library">library_books</i>Temple <span class="highlighting-nav">Library</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href=" {{ url_for('get_book') }}"><i class="material-icons nav-icons">home</i></a></li>
@@ -49,25 +50,26 @@
 		{% block content %} {% endblock %}
 	</div>
     </main>
-<footer class="container-fluid page-footer grey darken-3">
-	<div class="row">
-		<div class="center col s12 m6">
-			<h5>Temple <span class="highlighting-footer">Library</span></h5>
-			<p>Data Centric Development | Milestone Project | &copy; Copyright 2020 Emal Fiza</p>
+    
+	<footer class="container-fluid page-footer grey darken-3">
+		<div class="row">
+			<div class="center col s12 m6">
+				<h5>Temple <span class="highlighting-footer">Library</span></h5>
+				<p>Data Centric Development | Milestone Project | &copy; Copyright 2020 Emal Fiza</p>
+			</div>
+			<div class="center col s12 m6">
+				<h5>Our <span class="highlighting-footer">Social</span></h5>
+				<a class="grey-text text-lighten-4" href="https://github.com/emalfiza"
+					target="_blank"><i class="fab fa-github fa-2x  list-inline social-links"></i></a>
+				<a class="grey-text text-lighten-3" href="https://twitter.com/emalfiza"
+					target="_blank"><i class="fab fa-twitter fa-2x  list-inline social-links"></i></a>
+				<a class="grey-text text-lighten-4" href="https://www.linkedin.com/in/emal-fiza-36b33b111/"
+					target="_blank"><i class="fab fa-linkedin fa-2x  list-inline social-links"></i></a>
+				<a class="grey-text text-lighten-3" href="https://www.pinterest.co.uk/emalfiza/"
+					target="_blank"><i class="fab fa-pinterest fa-2x  list-inline social-links"></i></a>
+			</div>
 		</div>
-		<div class="center col s12 m6">
-			<h5>Our <span class="highlighting-footer">Social</span></h5>
-			<a class="grey-text text-lighten-4" href="https://github.com/emalfiza"
-				target="_blank"><i class="fab fa-github fa-2x  list-inline social-links"></i></a>
-			<a class="grey-text text-lighten-3" href="https://twitter.com/emalfiza"
-				target="_blank"><i class="fab fa-twitter fa-2x  list-inline social-links"></i></a>
-			<a class="grey-text text-lighten-4" href="https://www.linkedin.com/in/emal-fiza-36b33b111/"
-				target="_blank"><i class="fab fa-linkedin fa-2x  list-inline social-links"></i></a>
-			<a class="grey-text text-lighten-3" href="https://www.pinterest.co.uk/emalfiza/"
-				target="_blank"><i class="fab fa-pinterest fa-2x  list-inline social-links"></i></a>
-		</div>
-	</div>
-</footer>
+	</footer>
 
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"

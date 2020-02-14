@@ -75,7 +75,7 @@ def update_book(book_id):
         "book_cover": request.form.get("book_cover"),
         "description": request.form.get("description"),
     })
-    return redirect(url_for('get_book'))
+    return redirect(url_for("get_book"))
 
 
 @app.route("/view_book/<book_id>")
@@ -90,9 +90,9 @@ def delete_book(book_id):
     return redirect(url_for("get_book"))
 
 
-@app.route('/search_isbn', methods=['POST'])
+@app.route("/search_isbn", methods=["POST"])
 def find_book_info():
-    book_isbn = request.form['isbn'].strip()
+    book_isbn = request.form["isbn"].strip()
     google_api = "https://www.googleapis.com/books/v1/volumes?q=isbn:"
 
     with urllib.request.urlopen(google_api + book_isbn) as f:
