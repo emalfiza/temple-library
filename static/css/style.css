@@ -38,6 +38,10 @@ a {
     color: #26a69a;
 }
 
+.grey.darken-3 {
+    background-color: #322105!important;
+}
+
 /***** NAVBAR *****/
 .library {
     color: #26a69a;
