@@ -113,9 +113,11 @@ The UX has been designed with the end user in mind and as expectations in terms 
 Considering what would be logical and reasonable Data-centric project is about usibility more than being fancy and decorated, That is why I kept the default material feeling and considering intuitive  IA (Information Architecture), the structure has been kept as simplistic as possible on App.
 
 Information architecture is just a small part of the User Experience but imperative to achieve the functionality without either users or user/contributors losing interest and leaving the site.
-The structure below was considered to develope a good Information Architecture.
 
-![IA]()
+## Defensive design planning.
+---
+
+Defensive design planning for this project at this moment of the development was not required as this app was planned for librarian (users) rather than any users to access the app.
 
 
 ## MongoDB Atlas
@@ -139,6 +141,7 @@ The main features of the App are:
 ---
 Adding the ability to create users and borrowing books collection into the MongoDB and routing them to the App by adding more pages will be considered for the future if I find the group for using this App. Obviously, creating a contact page would be a great enhancement to make in the future. 
 
+As I have mentioned on the Defensive design planning at sometimes if a user collection is added to the database, then Defensive design planning for the book details should be considered.
 
 ## Technologies Used
 ---
