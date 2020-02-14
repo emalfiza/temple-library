@@ -25,7 +25,7 @@
 
 <body class="background-img">
 	<header>
-		<nav class="container-fluid">
+		<nav>
 			<div class="nav-wrapper grey darken-3">
 				<a href="{{ url_for('get_book') }}"
 					class="brand-logo"><i class="material-icons library">library_books</i>Temple <span class="highlighting-nav">Library</a>
@@ -51,7 +51,7 @@
 	</div>
     </main>
     
-	<footer class="container-fluid page-footer grey darken-3">
+	<footer class="page-footer grey darken-3">
 		<div class="row">
 			<div class="center col s12 m6">
 				<h5>Temple <span class="highlighting-footer">Library</span></h5>
@@ -114,7 +114,7 @@
                     error: function(error){
 
                         // display the error message
-                        alert(error);
+                        alert("The ISBN could not be found");
 
                         // enable the button again
                         $('#searchIsbn').removeAttr("disabled");
