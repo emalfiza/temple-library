@@ -26,38 +26,68 @@ This project was developed to create an App to make life easier for a librarian 
 -**Browse Books** The users added books appear in a simplistic and userfriendly way in columns and rows, the most recent entries on the last column. 
 -**Columns and Rows** Each column and row consist the book cover, book name, book writer and genre. All the book names are linked to the viewbook page which can take you to that page by clicking the book name. 
 
-![Home Page]()
-![Home Page Mobile View]()
+<details>
+<summary>See here for the Home Page</summary>
+
+<p align="center">
+    <img height="350" src="./static/image/home-page.png" alt="home page large and small screen image">
+</p>
+</details>
+
 
 #### Add Book Page
 -**Add Book** The page consists of a search by ISBN text fields and search button right at the top of the page to give the users the ease to search for book info by ISBN requesting google API. During the development process of the App, I considered the option to presents the users the ability to manually add book info. Add manually consists of five text fields. Book name, writer name, genre, cover art link and a description and as well as a submit button beneath. 
 Adding book info by ISBN or adding manually after submitting pilots the users back to Home Page appearing the book down at the bottom.
-![Add Book]()
-![Add Book Mobile View]()
+
+<details>
+<summary>See here for the Add Book</summary>
+
+<p align="center">
+    <img height="350" src="./static/image/add-book.png" alt="add book large and small screen image">
+</p>
+</details>
 
 #### Viewbook Page
 -**Viewbook** Accessing the Viewbook page is via the Home Page of the App. After clicking the book name, you will land on the viewbook page. 
 Viewbook is consists of a title of the book, book name, writer name, book genre, book cover and description that only appears on this page.
 There are two buttons, Edit Book and Remove Book to cover the rest of the CRUD functionality. 
-![Viewbook]()
-![Viewbook Mobile View]()
+
+<details>
+<summary>See here for the View Book</summary>
+
+<p align="center">
+    <img height="350" src="./static/image/view-book.png" alt="view book page large and small screen image">
+</p>
+</details>
 
 #### Edit Book
 -**Edit Book** Accessing the Edit Book page is via the Viewbook Page of the App. After clicking the Edit Book button, you will land on the Edit Book page.
 Edit Book page is a simplistic form field. After completing the form and clicking the submit button will pilot, you back to the home page updating the entry for the users. 
-![Edit Book]()
-![Edit Book Mobile View]()
+
+<details>
+<summary>See here for the Edit Book Page</summary>
+
+<p align="center">
+    <img height="350" src="./static/image/edit-book.png" alt="edit book page large and small screen image">
+</p>
+</details>
 
 #### Remove Book
 -**Remove Book** Simply by clicking the Remove Book button. You will land back to the home page of the App and the book entry nomore available.
 
 #### About Page
 -**About Page** Accessing the About page is via the Navbar of the App. After clicking the info icon. You will end up on the About Page which gives the users the info about our mission, our vision and our values. 
-![About Page]()
-![About Page Mobile View]
+
+<details>
+<summary>See here for the About Page</summary>
+
+<p align="center">
+    <img height="350" src="./static/image/about.png" alt="about page large and small screen image">
+</p>
+</details>
+
 
 #### [See here for Wireframes](static/wireframes)
-
 
 ## UX
 ---
