@@ -411,6 +411,10 @@ Emal Fiza Full Stack Student at Code Institute
 
 ### Media
 
+the background photo has been taken for this app from the the following site:
+
+(https://www.publishingireland.com/)
+
 ### Inspiration
 
 I received inspiration for this project after meeting my personal guide Housam Ziad. He made me understand the concepts of building an App to be useful rather than for mark as a student and I believe this is a step forward in the development process.

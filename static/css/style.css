@@ -29,6 +29,15 @@ main {
     font-family: 'Exo 2', sans-serif;
 }
 
+/***** to make a href on the home page visually appealing *****/
+a {
+    color: #26a69a;
+}
+
+.highlighting-about {
+    color: #26a69a;
+}
+
 .home-title {
     margin-left: 10px;
     margin-bottom: 18px;
@@ -46,6 +55,13 @@ main {
     background-color: rgba(225,225,225,0.1);
 }
 
+@media only screen and (max-width: 767px) {
+    .book-image {
+        width: 50%;
+        height: auto;
+    }
+}
+
 /***** As a good practice I wanted the small screen less than 768px 
 to have a container with 100% width *****/
 @media only screen and (max-width: 767px) {
@@ -56,21 +72,6 @@ to have a container with 100% width *****/
     }
 }
 
-/***** to make a href on the home page visually appealing *****/
-a {
-    color: #26a69a;
-}
-
-.highlighting-about {
-    color: #26a69a;
-}
-
-@media only screen and (max-width: 767px) {
-    .book-image {
-        width: 50%;
-        height: auto;
-    }
-}
 /***** NAVBAR *****/
 h4 background colour appllied to both navbar and footer *****/ 
 .grey.darken-3 {
