@@ -1,22 +1,28 @@
 {% extends 'base.html' %} {% block content %}
 
 <div class="row">
+    <div class="col s12">
+        <a href="{{url_for('edit_book', book_id=book._id)}}"
+		   class="waves-effect waves-light btn-small">Edit Book<i class="material-icons">edit</i></a>
+    </div>
+</div>
+<div class="row">
 	<div class="col s12">
-		<h5>{{book.book_name}}</h5> <a href="{{url_for('edit_book', book_id=book._id)}}"
-			class="waves-effect waves-light btn-small">Edit Book<i class="material-icons">edit</i></a>
+		<h5 class="center-align">{{book.book_name}}</h5>
 	</div>
 </div>
-
-<div class="row">
-	<div class="col s12 m3 center-align">
+<div class="row book-details">
+	<div class="col s12 m4 center-align">
 		<img src="{{book.book_cover}}" width="100"/>
     </div>
-	<div class="col s12 m9">
+	<div class="col s12 m8">
 		<p><strong>Book Name: </strong>{{book.book_name}}</p>
 		<p><strong>Writer Name: </strong>{{book.book_writer}}</p>
 		<p><strong>Book Genre: </strong>{{book.book_genre}}</p>
 		<p><strong>Description: </strong>{{book.description}}</p>
 	</div>
+</div>
+<div class="row">
 	<div class="col s12">
 		<a href="{{url_for('delete_book', book_id=book._id)}}" class="waves-effect waves-light btn-small">Remove
 			Book</a>
