@@ -1,10 +1,11 @@
 {% extends "base.html" %} {% block content %}
-<!--Books Table-->
-<h4>Browse Books</h4>
+
+<div>
+<h4 class="home-title">Browse Books</h4>
 	{% for book in book %}
 	<div class="row highlight">
 		<div class="col s12 m3">
-			<img src="{{book.book_cover}}" width="100%%">
+			<img class="book-image" src="{{book.book_cover}}" width="75%">
 	    </div>
 		<div class="col s12 m3">
 			<strong>Book Name:</strong><br>
@@ -20,4 +21,5 @@
 	    </div>
 	</div>
 	{% endfor %}
+</div>
 {% endblock %}

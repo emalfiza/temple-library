@@ -29,6 +29,11 @@ main {
     font-family: 'Exo 2', sans-serif;
 }
 
+.home-title {
+    margin-left: 10px;
+    margin-bottom: 18px;
+}
+
 /***** rgba background colour for the div container to contrast the font *****/
 .bg-color {
     background-color: rgba(50, 33, 5, 0.6);
@@ -60,8 +65,14 @@ a {
     color: #26a69a;
 }
 
+@media only screen and (max-width: 767px) {
+    .book-image {
+        width: 50%;
+        height: auto;
+    }
+}
 /***** NAVBAR *****/
-/***** Same background colour appllied to both navbar and footer *****/ 
+h4 background colour appllied to both navbar and footer *****/ 
 .grey.darken-3 {
     background-color: #322105!important;
 }
