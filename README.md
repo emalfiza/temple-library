@@ -124,8 +124,12 @@ Defensive design planning for this project at this moment of the development was
 ---
 
 MongoDB Atlas was recommended by Code Institute. 
+
 MongoDB was the perfect choice for this project.
+
 The Mongo DB documentation and Code Institute tutorials were very helpful. MongoDB data creation was the first step for this App. 
+
+As of a good and standrad practice the collection name on database better singular that's why I opted for single collection name.
 
 
 ## Features
