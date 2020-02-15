@@ -37,8 +37,18 @@ main {
     margin-bottom: 12px;
 }
 
-table.highlight>tbody>tr:hover {
+.highlight:hover {
     background-color: rgba(225,225,225,0.1);
+}
+
+/***** As a good practice I wanted the small screen less than 768px 
+to have a container with 100% width *****/
+@media only screen and (max-width: 767px) {
+    .container {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
 }
 
 /***** to make a href on the home page visually appealing *****/
@@ -94,7 +104,7 @@ visually appealing on a small screen that's why media query added *****/
 }
 
 /***** The font size for the h4 is a materialize default and it was overspilling 
-on a small screen less than 390 that's why media query added *****/
+on a small screen less than 390px that's why media query added *****/
 @media only screen and (max-width: 390px) {  
     a.brand-logo,
     h4 {

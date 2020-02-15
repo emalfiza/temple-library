@@ -1,27 +1,23 @@
 {% extends "base.html" %} {% block content %}
 <!--Books Table-->
 <h4>Browse Books</h4>
-<table class="highlight">
-	<thead>
-		<tr>
-			<th>Book Cover</th>
-			<th>Book Name</th>
-			<th>Book Writer</th>
-			<th>Genre</th>
-		</tr>
-	</thead>
 	{% for book in book %}
-	<tr>
-		<td><img src="{{book.book_cover}}" width="100"/></td>
-		<td>
-			<a href="{{url_for('view_book', book_id=book._id)}}">
-				{{book.book_name}}
-			</a>
-		</td>
-		<td>{{book.book_writer}}</td>
-		<td>{{book.book_genre}}</td>
-	</tr>
+	<div class="row highlight">
+		<div class="col s12 m3">
+			<img src="{{book.book_cover}}" width="100%%">
+	    </div>
+		<div class="col s12 m3">
+			<strong>Book Name:</strong><br>
+			<a href="{{url_for('view_book', book_id=book._id)}}">{{book.book_name}}</a>
+		</div>
+		<div class="col s12 m3">
+			<strong>Book Writer:</strong><br>
+	        {{book.book_writer}}
+	    </div>
+		<div class="col s12 m3">
+			<strong>Genre:</strong><br>
+	        {{book.book_genre}}
+	    </div>
+	</div>
 	{% endfor %}
-</table>
-
 {% endblock %}
