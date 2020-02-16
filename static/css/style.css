@@ -73,7 +73,7 @@ to have a container with 100% width *****/
 }
 
 /***** NAVBAR *****/
-h4 background colour appllied to both navbar and footer *****/ 
+/***** background colour appllied to both navbar and footer *****/ 
 .grey.darken-3 {
     background-color: #322105!important;
 }
