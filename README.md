@@ -2,8 +2,14 @@
 ---
 
 ## App Name: Temple Library -
+---
 
-#### [See here for a deployed app]()
+![](./static/gifs/home.gif)
+![](./static/gifs/add-book.gif)
+![](./static/gifs/about.gif)
+
+
+#### [See here for a deployed app](https://temple-library.herokuapp.com/)
 It is no secret that I love books.  Though I prefer the printed book, I also have electronic collections on every device imaginable.  
 From speaking about the [WE SHOULD ALL BE FEMINISTS ](https://www.chimamanda.com/book/we-should-all-be-feminists/) or how 
 [BOOKS MAKE A BETTER LIFE](https://www.skipprichard.com/books-make-a-better-life/) to visiting bookstores and libraries, I want 
@@ -219,9 +225,9 @@ All CRUD functionality is working correctly.
 
 ##  Responsive Design - Temple Library app is fully responsive; 
 
-1. For the final tests, as throughout the entire development and design process, I continuously tested a multitude of screen sizes using Chrome Developer tools. Each time there was a change in navigation, design, functionality etc., how it looked on every size screen was always checked. At the final when I was happy with everything I checked the responsiveness on the [Am I Responsive](http://ami.responsivedesign.is/#)
-
+- For the final tests, as throughout the entire development and design process, I continuously tested a multitude of screen sizes using Chrome Developer tools. Each time there was a change in navigation, design, functionality etc., how it looked on every size screen was always checked. At the final when I was happy with everything I checked the responsiveness on the [Am I Responsive](http://ami.responsivedesign.is/#)
 It was found during final user device tests that individual phone settings, on any mobile screen size the Navbar logo font size was overlapping and line breaking on the viewport this all fixed by setting media query and as well as the h4 and h5 font size was very large for the small screens as it was the materialize default font size setup which was not really visually appealling so again media query added. 
+- The Materialize table for the home page was overlapping the full width of the screen on screen less than 390px. I add to take the table off and add class of rows and colls to fix this issue.
 
 
 ## Compatibility
@@ -243,10 +249,12 @@ To ensure a broad range of users can successfully use this site, I tested it acr
 
 Mobile phones
 - Samsung j5
+- Samsung 7edge
 - Samsung A8
 - Iphone 6
-- Iphone7
-- Iphone 7S plus,
+- Iphone 7
+- Iphone 8
+- Iphone 8S plus,
 - Sony XA42
 
 Tablets tested
@@ -290,6 +298,8 @@ The static folder structure is as follows:
 static (folder)
    CSS (folder)
       style.css (file)
+   gifs (folder)
+       (gifs)
    images (folder)
       (image files)
    js (folder)
